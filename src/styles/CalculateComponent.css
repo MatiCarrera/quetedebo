@@ -1,0 +1,28 @@
+.friend {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.friend input {
+  width: 90%;
+  padding-left: 4px; 
+  border: solid 0.1px grey;
+  border-radius: 5px;
+  transition: border-color 0.1s, box-shadow 0.1s; 
+}
+
+.friend input::placeholder {
+  color: rgb(198, 197, 197);
+}
+
+.friend input:hover {
+  border-color: #007bff; 
+}
+
+.friend input:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  outline: none; 
+}
