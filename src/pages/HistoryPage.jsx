@@ -1,6 +1,6 @@
 const HistoryPage = () => {
   return (
-    <div>HistoryPage</div>
+    <div>Lista Negra</div>
   )
 }
 

@@ -1,6 +1,6 @@
 const HistoryComponent = () => {
   return (
-    <div>HistoryComponent</div>
+    <div>Lista Negra</div>
   )
 }
 
