@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../styles/CalculateComponent.css";
 import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
 import { red } from "@mui/material/colors";
+import '../styles/CalculateComponent.css'
 
 const CalculateComponent = () => {
   const [transacciones, setTransacciones] = useState([]);
@@ -91,7 +91,7 @@ const CalculateComponent = () => {
               placeholder="Gasto"
             />
           </div>
-          <div className="d-grid gap-1">
+          <div className="d-grid gap-1 buttonPanel">
             <button
               onClick={addFriend}
               className="btn btn-primary"
@@ -114,26 +114,25 @@ const CalculateComponent = () => {
             >
               Resetear
             </button>
-
-            <ul>
-              {amigos.map((amigo, index) => (
-                <li key={index} className="friend-list">
-                  {amigo.name} puso: ${amigo.expense}
-                  <DeleteForeverRoundedIcon
-                    onClick={() => deleteFriend(index)}
-                    className="delete-icon"
-                    sx={{ color: red[500] }}
-                  />
-                </li>
-              ))}
-            </ul>
-            <p>Total:${totalGasto}</p>
-            <ul>
-              {transacciones.map((transaccion, index) => (
-                <li key={index}>{transaccion}</li>
-              ))}
-            </ul>
           </div>
+          <ul className="calculatedList">
+            {amigos.map((amigo, index) => (
+              <li key={index} className="friend-list">
+                {amigo.name} puso: ${amigo.expense}
+                <DeleteForeverRoundedIcon
+                  onClick={() => deleteFriend(index)}
+                  className="delete-icon"
+                  sx={{ color: red[500] }}
+                />
+              </li>
+            ))}
+          </ul>
+          <p><b>Total:${totalGasto}</b></p>
+          <ul className="calculatedList">
+            {transacciones.map((transaccion, index) => (
+              <li key={index}>{transaccion}</li>
+            ))}
+          </ul>
         </form>
       </div>
     </>

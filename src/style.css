@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 
 *{
     margin: 0;
@@ -12,13 +10,24 @@
 body{
     background-color: #f0f0f0;
 }
+.app-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .container{
     background-color: rgb(247, 247, 247);
     width: 90%;
     max-width: 400px;
-    margin-top: 25px;
+    margin-Block: 25px;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
 }
+
+h1{
+    font-size: 1.3rem;
+}
+
+
 

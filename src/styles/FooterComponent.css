@@ -1,0 +1,14 @@
+.footer{
+    background-color: rgb(60, 60, 252);
+    display: flex;
+    margin-top: auto;
+    align-items: flex-end;
+}
+
+.footer p{
+    display: flex;
+    font-size: 10px;
+    color: aliceblue;
+    padding: 10px;
+    margin-bottom: 0;
+}
